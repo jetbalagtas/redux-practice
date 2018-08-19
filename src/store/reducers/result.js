@@ -20,8 +20,9 @@ const reducer = (state = initialState, action) => {
       ...state,
       results: udpatedArray
     }
+    default:
+      return state;
   }
-  return state;
 };
 
 export default reducer;
